@@ -1,8 +1,8 @@
 byte command, note, velocity, key[10];
 
 void setup() {
-  DDRB |= 0x00011111;
-  DDRD |= 0x01111100;
+  DDRB |= 0b00011111;
+  DDRD |= 0b01111100;
   PORTD = 0;
   Serial.begin(115200);
   
